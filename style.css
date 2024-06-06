@@ -1,0 +1,1001 @@
+*{transition:all 0.3s ease-in-out;}
+
+
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width: 100vw;
+    background-image: url('background.gif');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-family: 'Kenyan Coffee Regular', sans-serif;
+    letter-spacing: 1px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  section{
+    padding-bottom: 200px;
+    }
+
+  section, header, footer {
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+  .main {
+    padding: 0;
+    }
+  
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+p{
+    font-family: 'Kenyan Coffee Regular', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.header{
+    position:fixed;
+    align-items: center;
+    justify-content: space-between;
+    z-index:10;
+    width: 100vw;
+    color:rgb(255,255,255);
+    background-color: rgba(153, 0, 204, 0.5);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20);
+}
+
+.header-scrolled {
+    background-color: rgb(153, 0, 204);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20);
+}
+
+.menu-toggle{
+    display: none;
+}
+
+nav{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.navitems {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navlink{
+    font-size: 24px;
+    color: #D699EB;
+    text-decoration: none;
+}
+
+.navlink:hover{
+    color: rgb(255, 255, 255);
+}
+
+a:is(:link, :active, :visited).active{
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.logo img{
+    height: 60px;
+}
+
+.headbtns {
+    position: relative;
+    bottom: 150px;
+    left: 100px; /* Adjust the left position */
+    text-align: left;
+}
+
+.headerbtn {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: rgb(255, 255, 255);
+    outline-style: solid;
+    outline-color: rgb(255, 255, 255);
+    outline-width: 2px;
+    width: fit-content;
+    display: inline-block;
+    margin-right: 60px; /* Add margin between buttons */
+    font-size: 24px;
+}
+
+.headerbtn i {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+  .headerbtn:hover{
+    color:rgb(153, 0, 204);
+    background-color:rgb(255, 255, 255);
+    outline-width:0px;
+}
+
+.btnprpl{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: rgb(153, 0, 204);
+    outline-style: solid;
+    outline-color: rgb(153, 0, 204);
+    outline-width: 2px;
+    width: fit-content;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.btnprpl:hover{
+    color:rgb(255,255,255);
+    background-color:rgb(153, 0, 204);
+    outline-width:0px;
+}
+
+.btnwhite{
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: rgb(255, 255, 255);
+    outline-style: solid;
+    outline-color: rgb(255, 255, 255);
+    outline-width: 2px;
+    width: fit-content;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.btnwhite:hover{
+    color:rgb(153, 0, 204);
+    background-color:rgb(255, 255, 255);
+    outline-width:0px;
+}
+
+.section2 {
+    position: relative;
+    width: 100vw;
+    padding-top: 100vh;
+    padding-bottom: 1vh;
+    background-image: url(headerimg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 150px;
+  }
+
+  .productcolmns{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0px 100px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+
+  .productimg{
+    width: 70%;
+    height: 650px;
+    object-fit: cover;
+    float: left;
+    border-radius: 10px;
+    margin-right: 60px;
+  }
+
+  .productimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    justify-content: flex-start;
+    }
+
+  .prodthumb{
+    width: 195px;
+    height: 195px;
+    object-fit: cover;
+    float: left;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  .prodthumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .epoodhead{
+    margin-bottom: 0px;
+    position: relative;
+    width: 100vw;
+    padding-top: 100vh;
+    padding-bottom: 1vh;
+    background-image: url(merchheader.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+  .colmns{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0px 100px;
+  }
+
+  .teamimg{
+    width: auto;
+    height: 60%;
+    float: left;
+    border-radius: 10px;
+    margin-right: 60px;
+  }
+
+  .text-box h2{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        margin-top: 0px;
+  }
+
+  .text-box p{
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 0 100px; 
+    flex-wrap: wrap; /* Enable wrapping of items */
+}
+
+.row .column {
+    margin: 0 20px;
+    width: calc(20% - 40px); /* Adjust width of columns for 5 items per row */
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.columnimgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerimg {
+    transition: transform .2s;
+    width: 90%;
+    height: auto;
+    cursor: pointer; 
+}
+
+.playerimg:hover{
+    transform:scale(1.1);
+}
+
+.gamesimg {
+    width: 80%;
+    height: auto;
+    transition: transform .2s;
+}
+
+.gamesimg:hover{
+    transform:scale(1.1);
+}
+
+  .title2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    font-size: 53px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .title3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  .prpltitle{
+    color:rgb(153, 0, 204);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    transition: transform .2s;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .price {
+    color: rgb(153, 0, 204);
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .card:hover{
+    transform:scale(1.1);
+    box-shadow: 0px 0px 10px 1px rgb(153, 0, 204);
+  }
+  
+  
+
+
+  .match-widget {
+    padding: 24px;
+    width: 50%;
+    margin: auto;
+}
+
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.match-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.match-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(153, 0, 204);
+}
+
+.match-date {
+    color: #ffffff;
+}
+
+.match-teams {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.match-date {
+        text-align: left;
+    }
+
+.vs{
+    color: rgb(153, 0, 204);
+    font-weight: bold;
+    font-size: 53px;
+}
+
+.team-logo{
+    width: 60px;
+}
+
+.match-score{
+    font-weight: 800;
+    font-size: 53px;
+}
+
+footer {
+    background-color: rgb(153, 0, 204, 0.8);
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.footerlogo {
+    width: 200px;
+}
+
+.inputbox {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: inherit;
+    align-self: flex-end;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 16px 6px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    height: 56px;
+    color: white;
+    margin-bottom: 1rem;
+    font-family: 'Kenyan Coffee Regular', sans-serif;
+}
+
+.inputbox::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20;
+}
+
+.inputbox:hover {
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.inputbox:focus {
+    border-color: white;
+    outline: none;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footerlst {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-terms {
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footer-terms p{
+    font-size: 15px;
+}
+
+.contact{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0px 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 30px;
+    border-radius: 10px;
+  }
+
+  .contactus h2{
+        display: flex;
+        justify-content: flex-start; /* Align the title to the left */
+        align-items: center;
+        text-align: left; /* Align text to the left */
+        margin-top: 0px;
+        margin-bottom: 0px;
+  }
+
+svg {
+	height: 23rem;
+	margin-right: 4rem;
+}
+
+#envelope {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+	height: 100vh;
+}
+
+.filters {
+    padding: 30px 100px;
+    display: flex;
+    justify-content: left;
+    background-color: rgba(153, 0, 204, 0.8);
+    color: #ffffff;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    background-color: transparent;
+  }
+
+  .filter label {
+    margin-bottom: 5px;
+    border: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .filter select {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 24px;
+    outline: none;
+    appearance: none;
+    font-family: 'Kenyan Coffee Regular', sans-serif;
+  }
+
+  .filter option {
+    background-color: rgb(255, 255, 255);
+    color: rgb(153, 0, 204);
+    font-size: 24px;
+    font-family: 'Kenyan Coffee Regular', sans-serif;
+  }
+
+  .price-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .price-section select {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: 'Kenyan Coffee Regular', sans-serif;
+    outline: none;
+    appearance: none;
+  }
+
+  .price-section option {
+    background-color: rgb(255, 255, 255);
+    color: rgb(153, 0, 204);
+    font-family: 'Kenyan Coffee Regular', sans-serif;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+      }
+
+    section{
+        padding-bottom: 100px;
+    }
+
+    nav {
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .header {
+        padding: 10px 20px;
+        width: 100vw;
+    }
+
+    .btnprpl,
+    .btnwhite {
+        font-size: 16px;
+    }
+
+    .headbtns {
+        position: absolute; /* Change position to absolute */
+        top: 72%; /* Move the container to the vertical center of the page */
+        left: 20px; /* Adjust the left position to align to the left */
+        transform: translateY(-50%); /* Adjust to center vertically */
+        text-align: left; /* Align the buttons to the left */
+    }
+    
+    .headerbtn {
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 1rem 2rem;
+        color: rgb(255, 255, 255);
+        outline-style: solid;
+        outline-color: rgb(255, 255, 255);
+        outline-width: 2px;
+        width: max-content;
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block; /* Display as inline-block */
+        margin: 0 10px; /* Add some spacing between the buttons */
+        margin-bottom: 30px; /* Add margin to separate them vertically */
+    }
+
+    .section2 {
+        position: relative;
+        width: 100vw;
+        padding-top: 100vh;
+        padding-bottom: 1vh;
+        background-image: url(headerimgphone.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 150px;
+      }
+
+    .colmns {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .teamimg {
+        width: 80%;
+        margin: 0 0 20px;
+    }
+    
+    .text-box {
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .text-box h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .text-box p {
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .playerimg {
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .columnimgs {
+        flex: 0 0 45%;
+        margin: 5px;
+        display: flex;
+    }
+
+    .gamesimg {
+        margin: 0 10px;
+    }
+
+    .row {
+        margin: 0 10px;
+    }
+
+    .row .column {
+        width: calc(50% - 40px);
+    }
+
+    .title3{
+        font-size: 16px;
+    }
+
+    .prpltitle{
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+  
+    .match-widget {
+        width: 100%; /* Make match widget full width */
+    }
+  
+    /* Add more specific adjustments as needed */
+
+    .footer {
+        padding: 10px 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-content {
+        width: 100%;
+        max-width: 300px; /* Adjust the max-width as needed */
+    }
+
+    .card {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .title2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .match-widget {
+        width: 90%; /* Adjust width to fit smaller screens */
+    }
+    
+    .match-card {
+        flex-direction: column; /* Stack match details vertically */
+        padding: 20px; /* Adjust padding for better spacing */
+    }
+    
+    .match-teams {
+        flex-direction: row; /* Display team logos side by side */
+        justify-content: center; /* Center team logos horizontally */
+        align-items: center; /* Center team logos vertically */
+        gap: 10px; /* Add spacing between team logos */
+    }
+    
+    .team-logo {
+        width: 40px; /* Adjust size of team logos */
+    }
+    
+    .match-title,
+    .match-date,
+    .match-score {
+        text-align: center; /* Center text */
+        margin: 10px 0; /* Adjust margins for better spacing */
+    }
+    
+    .vs {
+        font-size: 36px; /* Adjust font size */
+    }
+    
+    .team-logo {
+        width: 40px; /* Adjust size of team logos */
+    }
+
+    .filter select,
+  .price-section select {
+    padding: 0.75rem 1.5rem;
+    font-size: medium;
+    margin-bottom: 30px;
+  }
+
+  .filter option,
+  .price-section option {
+    font-size: medium;
+  }
+
+  .price-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .price-section h2,
+  .price-section select {
+    width: 100%;
+  }
+
+}
+
+  @media screen and (max-width: 768px) {
+    .navitems {
+        position: fixed;
+        top: 40px; /* Adjust the top position to move the container higher up */
+        left: 0;
+        width: 100%;
+        padding: 20px 0; /* Add padding to the top and bottom */
+        height: calc(100vh - 40px); /* Calculate the height of the container */
+        background-color: rgb(153, 0, 204, 0.8);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 2;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20);
+    }
+    
+    .navitems.active {
+        transform: translateY(0);
+    }
+    
+    .navitems li {
+        text-align: center;
+        margin: 10px 0; /* Add margin to separate list items */
+    }
+    
+    .navlink {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo {
+        padding: 20px 0;
+        justify-content: center;
+        background-color: rgb(153, 0, 204);
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 11;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20);
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .menu-toggle {
+        position: absolute;
+        top: 50%; /* Adjust the top position */
+        transform: translateY(-50%);
+        right: 20px;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 12;
+        display: initial;
+    }
+
+    .productimg {
+        margin-right: 0px;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .filters {
+        padding: 20px 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .filter select {
+        width: 100%;
+    }
+
+    .epoodhead{
+        margin-bottom: 0px;
+        background-image: url(merchheaderphone.webp);
+    }
+
+    .contact {
+        margin: 0px 10px;
+        padding: 20px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .productcolmns {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 10px;
+        padding: 20px;
+    }
+
+    .productimg {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .thumbnails {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .prodthumb {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
